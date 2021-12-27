@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="app.css" rel="stylesheet" />
+    </head>
+
+    <body>
+       <header id="header-wrap">
+            <div id="head-left" style="text-align: center;">
+                <a href="index.html" style="text-decoration: none; color:#11999E;"><p>Home</p>
+                <a href="index.html#clothing" class="delnone" style="text-decoration: none; color: #11999E;"><p>Registration</p></a>
+                <a href="index.html#accessory" class="delnone" style="text-decoration: none; color: #11999E;"><p>Contact</p></a>
+            </div>
+
+        </header>
+            
+
+        
+        <br>
+       
+        <div class="container">
+            <div class="header">
+                <h2>CREATE USER ID </h2>
+            </div>
+            <form class="form">
+                <div class="form-control">
+                    <label for="username" name="username">Name:</label>
+                    <input id="txtUserName" type="text" name="username" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="dob" name="dob"> DOB:</label>
+                    <input id="txtdob" type="date" name="dob" min="2000-12-29" max="2003-12-28" />
+                </div>
+                <div class="form-control">
+                    <label for="rollno" name="rollno">Roll No:</label>
+                    <input id="txtrollno" type="text" name="rollno"/>
+                    <small>Error Message</small>
+                </div>
+               
+               <div class="form-control">
+                <label for="branchname" name="branchname" >Branch:</label>
+                 <select name="branchname" id="branchname">
+                     <option
+                         value="CSE">CSE</option>
+                         <option
+                         value="ECE">ECE</option>
+                         <option
+                         value="EEE">EEE</option>
+
+                    
+                 </select>
+                 <small>Error Message</small>
+             </div>
+              <div class="form-control">
+                    <label for="phoneno" name="phoneno" >Phone No:</label>
+                    <input id="txtphoneno" type="number" name="phoneno" max="999999999" min="100000000" />
+                    <small>Error Message</small>
+                </div>
+             
+
+                <div class="form-control">
+                    <lable for="email" name="email">Email</lable>
+                    <input id="txtEmail" type="email" name="email" />
+                    <small>Error Message</small>
+                </div>
+              
+                <div class="form-control">
+                    <section class="content">
+                    <ul class="list">
+    <h3>Sex: </h3>
+      <label class="label--radio">
+        <input type="radio" class="radio" checked  name="foo">
+          Male
+      </label>
+    
+    <br>
+      <label class="label--radio">
+        <input type="radio" class="radio" name="foo">
+          Female
+      </label>
+
+    
+    <br>
+      <label class="label--radio" >
+        <input type="radio" class="radio" name="foo" >
+         Prefer not to say
+      </label>
+    <br>
+    
+  </ul>
+                    
+                </section>   
+                    <small>Error Message</small>
+
+                </div>
+                <div class="form-control">
+                    <button>Register</button>
+                </div>
+            </form>
+        </div>
+       
+        <script src="app.js"></script>
+
+    </body>
+</html>
